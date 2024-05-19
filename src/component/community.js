@@ -17,7 +17,7 @@ function Community() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/communities`)
+      .get(`/communities`)
       .then((response) => {
         if (response.status === 200) {
           setCommunities(response.data);
@@ -38,7 +38,7 @@ function Community() {
 
   const fetchMessages = (communityId) => {
     axios
-      .get(`http://localhost:5000/community/messages/${communityId}`)
+      .get(`/community/messages/${communityId}`)
       .then((response) => {
         if (response.status === 200) {
           setMessages(response.data);
@@ -59,7 +59,7 @@ function Community() {
 
     axios
       .post(
-        "http://localhost:5000/addmessage",
+        "/addmessage",
         {
           content: newComment,
           username: storedUsername,
@@ -85,7 +85,7 @@ function Community() {
 
   const deleteComment = (commentId) => {
     axios
-      .delete(`http://localhost:5000/addmessage/${commentId}`, {
+      .delete(`/addmessage/${commentId}`, {
         headers: { accessToken: localStorage.getItem("accessToken") },
       })
       .then(() => {

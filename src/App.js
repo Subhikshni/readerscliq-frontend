@@ -10,10 +10,16 @@ import EBooks from "./component/EBooks.js";
 import Community from "./component/community.js";
 import Profile2 from "./component/profile2.js";
 
+axios.defaults.baseURL = "https://df21-54-252-247-141.ngrok-free.app";
+axios.defaults.headers = {
+  "Content-Type": "application/json",
+  "ngork-skip-browser-warning": "69420",
+};
+
 const handleLogin = async (username, password, navigate) => {
   try {
     const formData = { username, password };
-    const response = await axios.post("http://localhost:5000/login", formData);
+    const response = await axios.post("/login", formData);
     console.log(response.data);
     if (response.ok) {
       navigate(`/profile2/${username}`);
@@ -33,7 +39,7 @@ const handleSignup = async (
 ) => {
   try {
     const formData = { fullname, email, username, password, confirmPassword };
-    const response = await axios.post("http://localhost:5000/signup", formData);
+    const response = await axios.post("/signup", formData);
     console.log(response.data);
     navigate(`/profile2/${username}`);
   } catch (error) {
