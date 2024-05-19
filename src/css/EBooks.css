@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7d8ba8;
+}
+
+.Search {
+  width: 96%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.ebooks-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ebooks-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.ebook-item {
+  background-color: #8596b8;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ebook-title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.ebook-author {
+  color: #29354d;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.read-online-link {
+  color: #2c467a;
+  text-decoration: none;
+}
+
+.read-online-link:hover {
+  text-decoration: underline;
+}
+.navbar {
+  background-color: #282c34; /* Vibrant brown */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: left;
+  justify-content: flex-end;
+}
+
+.container {
+  align-items: left;
+  padding: 0px;
+  margin: 0px;
+}

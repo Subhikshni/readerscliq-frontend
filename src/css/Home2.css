@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: top;
+}
+
+.navbar {
+  background-color: #282c34; /* Vibrant brown */
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home-container {
+  background-image: url("../images/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 547px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 0px;
+  padding: 40px;
+}
+
+.content {
+  margin-top: 135px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-container {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.about-text,
+.about-image {
+  border: 2px solid #3b435256; /* Vibrant brown */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #7d8ba8; /* Lighter brown */
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-text h2 {
+  color: #282c34; /* Vibrant brown */
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #282c34;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-image {
+  background-image: url("../images/about-background.jpg");
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.Github_logo {
+  background-image: url("../images/github_logo.png");
+}
+
+.Linkedin_logo {
+  background-image: url("../images/linkedin_logo.png");
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #282c34;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.Github_logo,
+.Linkedin_logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  background-size: 20px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
